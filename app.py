@@ -7,7 +7,7 @@ import h5py
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
-st.set_page_config(page_title="EEG 8×8 Viewer", layout="wide")
+st.set_page_config(page_title="DTU EEG preprocessed dataset", layout="wide")
 st.title("EEG 8×8 Grid Viewer (HDF5)")
 
 # ---------------- Sidebar ----------------
@@ -32,7 +32,7 @@ with st.sidebar:
     h5_key_template = st.text_input(
         "Dataset key template",
         value="S{sub}/Tra{trial}",
-        help="형식 고정: S{sub}/Tra{trial}"
+        help="Fixed: S{sub}/Tra{trial}"
     )
 
     st.markdown("---")
